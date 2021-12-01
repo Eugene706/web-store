@@ -1,0 +1,57 @@
+@mixin r($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @include r(2559) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include r(1919) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include r(1439) {
+    @content;
+  }
+}
+
+@mixin ipadPro {
+  @include r(1439) {
+    @include rhmin(1340) {
+      @content;
+    }
+  }
+}
+
+@mixin md {
+  @include r(1023) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @include r(769) {
+    @include rhmin(1000) {
+      @content;
+    }
+  }
+}
+
+@mixin sm {
+  @include r(767) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @include r(599) {
+    @content;
+  }
+}

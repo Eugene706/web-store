@@ -1,0 +1,8 @@
+.top {
+  color: $main-blue;
+
+  @include sm {
+    color: black;
+    width: 100px;
+  }
+}
