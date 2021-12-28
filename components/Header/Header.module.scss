@@ -1,0 +1,139 @@
+.header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 2px solid $line;
+
+  @include lg {
+    font-size: 17px;
+    height: 85px;
+  }
+
+  // @include r(1100) {
+  //   font-size: 15px;
+  //   height: 75px;
+  // }
+
+  .logoLink {
+    color: $main-blue;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+
+    @include lg {
+      font-size: 26px;
+    }
+
+    // @include r(1100) {
+    //   font-size: 24px;
+    // }
+  }
+
+  &__container {
+    display: flex;
+    gap: 60px;
+
+    @include lg {
+      gap: 35px;
+    }
+
+    // @include r(1200) {
+    //   gap: 25px;
+    // }
+  }
+
+  &__input {
+    width: 670px;
+    height: 48px;
+    padding-left: 63px;
+    background: url('../../assets/svg/search_small.svg') no-repeat center left 15px,
+      url('../../assets/svg/close_big.svg') no-repeat center right 17px;
+    background-color: $input-bg;
+    border-radius: 99px;
+    font-size: 20px;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+
+    @include lg {
+      width: 600px;
+      height: 40px;
+      font-size: 17px;
+    }
+    // @include r(1290) {
+    //   width: 530px;
+    // }
+
+    // @include r(1180) {
+    //   width: 470px;
+    // }
+  }
+
+  &__order {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cart {
+    width: 181px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+
+    @include lg {
+      width: 165px;
+      height: 46px;
+    }
+
+    // @include r(1200) {
+    //   width: 155px;
+    // }
+
+    // @include r(1100) {
+    //   width: 150px;
+    //   height: 42px;
+    // }
+
+    &_same {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__sum {
+      width: 62%;
+      padding: 5px 0px;
+      background-color: $input-bg;
+      border: 1px solid $line;
+      font-weight: 500;
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    &__img {
+      color: $input-bg;
+      width: 38%;
+      background-color: $main-blue;
+      padding: 7px 0px;
+      border-radius: 0px 4px 4px 0px;
+      cursor: pointer;
+    }
+
+    &__spans {
+      font-size: 11px;
+      font-weight: 600;
+
+      // @include r(1100) {
+      //   font-size: 10px;
+      // }
+
+      &_grey {
+        color: $placeholder;
+      }
+    }
+  }
+}

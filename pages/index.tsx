@@ -12,10 +12,7 @@ const Home = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Head>
-      {/* <Header /> */}
-      <div className="container">
-        <Main />
-      </div>
+      <Main />
     </>
   );
 };

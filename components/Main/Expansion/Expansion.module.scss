@@ -1,0 +1,37 @@
+.expension {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 600;
+
+    button {
+      width: 41px;
+      height: 41px;
+      color: $input-bg;
+      background-color: $title;
+      border-radius: 20px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &__subscription {
+    width: 1212px;
+    margin: 5px 0 5px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  hr {
+    height: 1px;
+    background-color: $title;
+  }
+}

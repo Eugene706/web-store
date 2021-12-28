@@ -1,0 +1,82 @@
+.header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 2px solid $line;
+
+  @include lg {
+    font-size: 17px;
+    height: 85px;
+  }
+
+  // @include r(1100) {
+  //   font-size: 15px;
+  //   height: 75px;
+  // }
+
+  .logoLink {
+    color: $main-blue;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+
+    @include lg {
+      font-size: 26px;
+    }
+
+    // @include r(1100) {
+    //   font-size: 24px;
+    // }
+  }
+
+  &__status {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    color: #a0a3bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .itemLines {
+    position: relative;
+    margin: 0 110px;
+    &::before {
+      content: '';
+      width: 115px;
+      position: absolute;
+      top: 15px;
+      left: 90px;
+      border-top: 1px dashed #a0a3bd;
+    }
+    &::after {
+      content: '';
+      width: 115px;
+      position: absolute;
+      top: 15px;
+      left: -105px;
+      border-top: 1px dashed #a0a3bd;
+    }
+  }
+
+  .itemBlack {
+    color: $title;
+  }
+
+  .number {
+    width: 32px;
+    height: 32px;
+    padding-top: 6px;
+    border: 1.5px solid #a0a3bd;
+    border-radius: 50%;
+  }
+  .numberBlack {
+    border: 1.5px solid $title;
+  }
+}
