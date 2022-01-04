@@ -1,6 +1,7 @@
-import React from 'react';
-import styles from './Card.module.scss';
 import Image from 'next/image';
+
+import styles from './Card.module.scss';
+
 import Link from 'next/link';
 
 import CardImg from 'assets/img/CardImg.png';

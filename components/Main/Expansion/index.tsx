@@ -1,4 +1,5 @@
-import { FC, useState, useRef, useEffect } from 'react';
+import { FC, useState, useRef } from 'react';
+import { Transition } from 'react-transition-group';
 
 import styles from './Expansion.module.scss';
 
@@ -17,14 +18,15 @@ const Expension: FC<IExpension> = ({ name, subscription }) => {
         <button onClick={() => setActive(!active)}>{active ? '-' : '+'}</button>
         <span>{name}</span>
       </div>
-      {active && (
-        <p
-          ref={paragraphRef}
-          className={styles.expension__subscription}
-        >
-          {subscription}
-        </p>
-      )}
+      {/* {active && ( */}
+      <Transition in={active} timeout={500} mountOnEnter unmountOnExit>
+        {(state) => (
+          <p ref={paragraphRef} className={`${styles.expension__subscription} ${state}_sub`}>
+            {subscription}
+          </p>
+        )}
+      </Transition>
+      {/* )} */}
       <hr />
     </div>
   );

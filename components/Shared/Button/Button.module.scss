@@ -1,0 +1,32 @@
+.button {
+  background-color: $input-bg;
+  color: $placeholder;
+  padding: 12px 35px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 46px;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &_right {
+    flex-direction: row-reverse;
+    padding: 12px 25px;
+  }
+
+  & > svg {
+    fill: $placeholder;
+    transform: rotate(180deg);
+    transition: fill 0.3s;
+  }
+
+  &:hover {
+    background-color: $light-blue;
+    color: $input-bg;
+    & > svg {
+      fill: $input-bg;
+    }
+  }
+}

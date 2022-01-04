@@ -1,0 +1,26 @@
+@keyframes show-sub {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.entering_sub {
+  animation: show-sub 0.5s ease-in-out;
+}
+
+.exiting_sub {
+  animation: show-sub 0.5s reverse;
+}
+
+.exited_sub {
+  opacity: 0;
+  transform: translateY(-50px);
+}
