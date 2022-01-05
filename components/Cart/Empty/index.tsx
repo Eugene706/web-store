@@ -8,7 +8,7 @@ import styles from './Empty.module.scss';
 
 const Empty = () => {
   return (
-    <div className={styles.empty}>
+    <main className={styles.empty}>
       <Image src={Airpods} alt="Slider" />
       <h1 className={styles.empty__title}>Кажется здесь пусто!</h1>
       <Link href="/" passHref>
@@ -16,7 +16,7 @@ const Empty = () => {
           <Button inscription="Вернуться в меню" orientation={false} />
         </a>
       </Link>
-    </div>
+    </main>
   );
 };
 

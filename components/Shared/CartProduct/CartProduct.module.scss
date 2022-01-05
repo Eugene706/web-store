@@ -1,0 +1,65 @@
+.product {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $line;
+  border-bottom: 1px solid $line;
+
+  &__infoContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  &__characteristics {
+    font-size: 15px;
+    font-weight: 400;
+
+    :first-of-type {
+      margin-right: 15px;
+    }
+  }
+
+  &__settings {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    & > span {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  &__counter {
+    background-color: $input-bg;
+    padding: 4px 11px;
+    display: flex;
+    align-items: center;
+    border-radius: 34px;
+
+    & > input {
+      width: 31px;
+      background-color: $input-bg;
+      color: $placeholder;
+      margin: 0 7px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    & > svg {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import Card from 'components/Card';
+import Card from 'components/Shared/Card';
 import Expension from './Expansion';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 import styles from './Main.module.scss';
 
-import Catalog from 'components/CatalogItem';
+import Catalog from 'components/Shared/CatalogItem';
 import Slider from 'assets/img/SliderIMg.png';
 
 const obj = [
