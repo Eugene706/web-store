@@ -13,7 +13,7 @@ const Empty = () => {
       <h1 className={styles.empty__title}>Кажется здесь пусто!</h1>
       <Link href="/" passHref>
         <a>
-          <Button inscription="Вернуться в меню" orientation={false} />
+          <Button inscription="Вернуться в меню" />
         </a>
       </Link>
     </main>

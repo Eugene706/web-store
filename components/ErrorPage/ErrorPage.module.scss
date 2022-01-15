@@ -1,0 +1,47 @@
+.error {
+  &__header {
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $line;
+  }
+
+  &__logoLink {
+    color: $main-blue;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+
+    @include lg {
+      font-size: 26px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 300px;
+  }
+
+  &__subs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > h1 {
+      color: $main-blue;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 121px;
+    }
+
+    & > samp {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      margin: 20px 0 40px 0;
+    }
+  }
+}

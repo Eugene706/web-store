@@ -4,7 +4,7 @@ import styles from './Button.module.scss';
 
 interface IButton {
   inscription: string;
-  orientation: boolean;
+  orientation?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 

@@ -42,6 +42,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    &_active {
+      color: $title;
+    }
   }
 
   .itemLines {
@@ -65,16 +69,16 @@
     }
   }
 
-  .itemBlack {
-    color: $title;
-  }
-
   .number {
     width: 32px;
     height: 32px;
     padding-top: 6px;
     border: 1.5px solid #a0a3bd;
     border-radius: 50%;
+
+    &_active {
+      border: 1.5px solid $title;
+    }
   }
   .numberBlack {
     border: 1.5px solid $title;

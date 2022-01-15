@@ -1,0 +1,134 @@
+.SecondStep {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__userInfo {
+    width: 540px;
+  }
+
+  &__inputs {
+    margin-top: 40px;
+
+    &_row {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__contactIputs {
+    width: 47%;
+
+    &_second {
+      width: 42%;
+    }
+  }
+
+  &__locationIputs {
+    width: 52%;
+  }
+
+  &__orderInfo {
+    width: 430px;
+  }
+
+  &__ordersContainer {
+    background-color: $input-bg;
+    margin: 40px 0 30px 0;
+    border: 1px solid $line;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    overflow-x: hidden;
+  }
+
+  &__orders {
+    max-height: 326px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+
+    & > * {
+      padding: 15px 30px;
+    }
+  }
+
+  &__price {
+    padding: 15px 30px;
+    border-top: 1px solid $line;
+
+    & > :last-child {
+      margin-top: 7px;
+    }
+
+    & > dl {
+      display: flex;
+      flex-direction: row;
+      gap: 7px;
+    }
+  }
+
+  &__sum {
+    width: fit-content;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 28px;
+    border-bottom: 2px solid $line;
+    margin: 0 auto;
+
+    & > span {
+      color: $main-blue;
+      margin-left: 5px;
+    }
+  }
+
+  &__buttons {
+    margin-top: 95px;
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  li {
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+  }
+
+  label {
+    color: $placeholder;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  input {
+    height: 40px;
+    width: 100%;
+    background-color: $input-bg;
+    padding: 0 15px;
+    margin-top: 5px;
+    border-radius: 17px;
+    font-size: 18px;
+  }
+}

@@ -1,18 +1,22 @@
-import { createContext, useState } from 'react';
+import { createContext, FunctionComponent, useState } from 'react';
 
 import styles from './Cart.module.scss';
 
 import CartHeader from 'components/Cart/CartHeader';
 import Empty from 'components/Cart/Empty';
 import FirstStep from 'components/Cart/FirstStep';
+import SecondStep from 'components/Cart/SecondStep';
+import ThirdStep from 'components/Cart/ThirdStep';
+import { IStep } from 'types/ComponentTypes';
 
 const stepsComponents: IstepsComponents = {
   0: FirstStep,
-  1: Empty,
+  1: SecondStep,
+  2: ThirdStep,
 };
 
 interface IstepsComponents {
-  [key: number]: () => JSX.Element;
+  [key: number]: FunctionComponent<IStep>;
 }
 
 const Cart = () => {
@@ -23,11 +27,15 @@ const Cart = () => {
     setStep((prev) => prev + 1);
   };
 
+  const onPrevStep = () => {
+    setStep((prev) => prev - 1);
+  };
+
   return (
     <div className={styles.cart}>
-      <CartHeader />
+      <CartHeader activeNumber={step} />
       {/* <Empty /> */}
-      <Step />
+      <Step onNextStep={onNextStep} onPrevStep={onPrevStep} />
     </div>
   );
 };

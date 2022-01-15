@@ -113,7 +113,7 @@ const Product = () => {
           </div>
           <Link href="/" passHref>
             <a>
-              <Button inscription="Назад в каталог" orientation={false} />
+              <Button inscription="Назад в каталог" />
             </a>
           </Link>
         </main>

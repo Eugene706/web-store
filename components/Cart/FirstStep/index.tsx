@@ -1,11 +1,13 @@
+import { FC } from 'react';
+import Link from 'next/link';
+
 import Button from 'components/Shared/Button';
 import CartProduct from 'components/Shared/CartProduct';
-import Link from 'next/link';
-import React from 'react';
+import { IStep } from 'types/ComponentTypes';
 
 import styles from './FirstStep.module.scss';
 
-const FirstStep = () => {
+const FirstStep: FC<IStep> = ({ onNextStep }) => {
   return (
     <main className={styles.firsStep}>
       <h1 className={styles.firsStep__title}>Ваш заказ</h1>
@@ -23,10 +25,10 @@ const FirstStep = () => {
       <div className={styles.firsStep__buttons}>
         <Link href="/" passHref>
           <a>
-            <Button inscription="Вернуться в меню" orientation={false} />
+            <Button inscription="Вернуться в меню" />
           </a>
         </Link>
-        <Button inscription="Оформить заказ" orientation={true} />
+        <Button inscription="Оформить заказ" orientation={true} onClick={onNextStep} />
       </div>
     </main>
   );
