@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import Footer from 'components/Footer';
-import Header from 'components/Header';
+import Footer from 'components/Shared/Footer';
+import Header from 'components/Shared/Header';
 
 import styles from './Product.module.scss';
 

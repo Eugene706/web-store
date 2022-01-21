@@ -1,13 +1,14 @@
 import Image from 'next/image';
 
+import CatalogTitle from 'components/Shared/CatalogTitle';
+import Catalog from 'components/Main/CatalogItem';
 import Card from 'components/Shared/Card';
 import Expension from './Expansion';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from 'components/Shared/Header';
+import Footer from 'components/Shared/Footer';
 
 import styles from './Main.module.scss';
 
-import Catalog from 'components/Shared/CatalogItem';
 import Slider from 'assets/img/SliderIMg.png';
 
 const obj = [
@@ -33,12 +34,10 @@ const Main = () => {
     <>
       <div className="container">
         <Header />
-        <main className={styles.main}>
+        <main className={styles.mainPage}>
           <section className={styles.hero}>
             <div className={styles.hero__container}>
-              <div className={styles.hero__title}>
-                <h2>КАТАЛОГ ТОВАРОВ</h2>
-              </div>
+              <CatalogTitle />
               <ul className={styles.hero__catalog}>
                 <Catalog />
               </ul>

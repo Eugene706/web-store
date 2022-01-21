@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 
 import Button from 'components/Shared/Button';
-import CartProduct from 'components/Shared/CartProduct';
+import CartProduct from 'components/Cart/CartProduct';
 import { IStep } from 'types/ComponentTypes';
 
 import styles from './FirstStep.module.scss';

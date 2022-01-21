@@ -1,0 +1,11 @@
+.rc-slider {
+  width: calc(100% - 7px) !important;
+  margin: 0 auto;
+
+  &-handle {
+    &-dragging {
+      border: 0;
+      box-shadow: none !important;
+    }
+  }
+}

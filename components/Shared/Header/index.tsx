@@ -8,8 +8,6 @@ import styles from './Header.module.scss';
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
 
-  console.log(openModal);
-
   return (
     <>
       <header className={styles.header}>

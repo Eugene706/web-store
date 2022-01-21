@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import Button from 'components/Shared/Button';
-import OrderProduct from 'components/Shared/OrderProduct';
+import OrderProduct from 'components/Cart/OrderProduct';
 
 import { IStep } from 'types/ComponentTypes';
 

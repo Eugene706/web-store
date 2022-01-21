@@ -1,0 +1,43 @@
+.sort {
+  min-width: 144px;
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  user-select: none;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 8px;
+    cursor: pointer;
+
+    & > span {
+      border-bottom: 1px solid $line;
+    }
+
+    & > svg {
+      fill: $light-blue;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__popup {
+    color: $placeholder;
+    position: absolute;
+    top: 26px;
+    background-color: #fff;
+    padding: 7px 13px;
+    border: 1px solid $line;
+    border-radius: 7px;
+    z-index: 3;
+
+    :not(:first-child) {
+      margin-top: 7px;
+    }
+
+    &_active {
+      color: $title;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  input {
+    -webkit-appearance: none;
+    position: absolute;
+  }
+
+  &__custom {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    margin-right: 13px;
+    border: 1px solid $line;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  input:checked ~ .checkbox__custom .checkbox__checkmark {
+    display: block;
+  }
+
+  input:checked ~ .checkbox__custom {
+    background: $light-blue;
+    border: 1px solid $light-blue;
+    transition: all 0.3s;
+  }
+}
