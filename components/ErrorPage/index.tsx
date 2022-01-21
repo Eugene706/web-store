@@ -19,11 +19,11 @@ const ErrorPage = () => {
         <section className={styles.error__subs}>
           <h1>404</h1>
           <samp>страница не найдена</samp>
-          <Link href="/" passHref>
-            <a>
-              <Button inscription="Вернуться на главную" />
-            </a>
-          </Link>
+          <Button>
+            <Link href="/" passHref>
+              <a>Вернуться на главную</a>
+            </Link>
+          </Button>
         </section>
       </main>
     </div>

@@ -111,11 +111,11 @@ const Product = () => {
             <Recommendation />
             <Recommendation />
           </div>
-          <Link href="/" passHref>
-            <a>
-              <Button inscription="Назад в каталог" />
-            </a>
-          </Link>
+          <Button>
+            <Link href="/">
+              <a>Назад в каталог</a>
+            </Link>
+          </Button>
         </main>
       </div>
       <Footer />

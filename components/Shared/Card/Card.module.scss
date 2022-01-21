@@ -49,5 +49,9 @@
     border-radius: 5px;
     border: 1px solid $light-blue;
     transition: 0.2s ease-in-out all;
+
+    & > a {
+      color: inherit;
+    }
   }
 }

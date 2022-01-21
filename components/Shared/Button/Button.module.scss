@@ -22,11 +22,21 @@
     transition: fill 0.3s;
   }
 
+  & > a {
+    color: $placeholder;
+    transition: color 0.3s;
+  }
+
   &:hover {
-    background-color: $light-blue;
     color: $input-bg;
+    background-color: $light-blue;
+
     & > svg {
       fill: $input-bg;
+    }
+
+    & > a {
+      color: $input-bg;
     }
   }
 }

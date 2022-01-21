@@ -3,12 +3,13 @@ import React, { FC } from 'react';
 import styles from './Button.module.scss';
 
 interface IButton {
-  inscription: string;
+  inscription?: string;
   orientation?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  children?: React.ReactNode;
 }
 
-const Button: FC<IButton> = ({ inscription, orientation, onClick }) => {
+const Button: FC<IButton> = ({ inscription, orientation, onClick, children }) => {
   return (
     <button className={`${styles.button} ${orientation ? styles.button_right : ''}`} onClick={onClick}>
       <svg
@@ -21,6 +22,7 @@ const Button: FC<IButton> = ({ inscription, orientation, onClick }) => {
       >
         <path d="M7.71299 7L1.70199 0.99L0.287994 2.404L4.88799 7.004L0.287994 11.597L1.70199 13.011L7.71299 7Z" />
       </svg>
+      {children}
       {inscription}
     </button>
   );

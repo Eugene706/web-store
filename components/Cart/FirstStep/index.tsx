@@ -23,11 +23,11 @@ const FirstStep: FC<IStep> = ({ onNextStep }) => {
         </div>
       </div>
       <div className={styles.firsStep__buttons}>
-        <Link href="/" passHref>
-          <a>
-            <Button inscription="Вернуться в меню" />
-          </a>
-        </Link>
+        <Button>
+          <Link href="/">
+            <a>Вернуться в меню</a>
+          </Link>
+        </Button>
         <Button inscription="Оформить заказ" orientation={true} onClick={onNextStep} />
       </div>
     </main>

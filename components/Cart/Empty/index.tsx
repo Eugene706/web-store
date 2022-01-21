@@ -11,11 +11,11 @@ const Empty = () => {
     <main className={styles.empty}>
       <Image src={Airpods} alt="Slider" />
       <h1 className={styles.empty__title}>Кажется здесь пусто!</h1>
-      <Link href="/" passHref>
-        <a>
-          <Button inscription="Вернуться в меню" />
-        </a>
-      </Link>
+      <Button>
+        <Link href="/">
+          <a>Вернуться в меню</a>
+        </Link>
+      </Button>
     </main>
   );
 };
