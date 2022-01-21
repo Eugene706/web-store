@@ -6,7 +6,7 @@ import Header from 'components/Shared/Header';
 
 import styles from './Product.module.scss';
 
-import MainImg from 'assets/img/MainImg.png';
+import MainImg from 'assets/img/Mainimg.png';
 import MinorImg from 'assets/img/smallimg.png';
 import MinorImg1 from 'assets/img/smallimg1.png';
 import Recommendation from 'components/Shared/Recommendation';
